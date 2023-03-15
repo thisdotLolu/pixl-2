@@ -1,0 +1,13 @@
+{
+  "projects": {
+    "default": "gopixl"
+  },
+  "targets": {},
+  "etags": {
+    "gopixl": {
+      "extensionInstances": {
+        "gopixlxyz": "3f7345605478ba25417502a2bac1d9a4b36877666f5021bc5de68061f0ddd764"
+      }
+    }
+  }
+}

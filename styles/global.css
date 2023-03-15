@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply dark:bg-neutral-900;
+  }
+}
+
+@layer components {
+  .cardFt {
+    @apply bg-gray-100 rounded-lg border border-gray-200 p-6 shadow-md flex flex-col space-y-4 text-gray-900 dark:bg-gradient-to-tr dark:backdrop-blur-lg dark:from-indigo-700 dark:via-indigo-800 dark:to-purple-800 dark:border-indigo-900 dark:text-white
+  }
+  .Pcontainer {
+    @apply bg-gray-100 flex min-h-screen pb-[100px] md:pb-5 w-full
+  } 
+  .adminDark {
+    @apply dark:bg-gradient-to-r dark:to-black/90 dark:from-slate-900 dark:text-white
+  }
+  .buttonPrimary { 
+    @apply rounded-lg bg-pixlviol-500 hover:bg-indigo-600 text-white text-base text-center px-8 py-4 transition duration-150 ease-out hover:ease-in dark:bg-yellow-500 dark:text-black
+  }
+  .buttonUpdate { 
+    @apply rounded-lg bg-pixlviol-200 hover:bg-pixlviol-500 text-white text-sm text-center px-5 py-3.5 transition duration-150 ease-out hover:ease-in
+  }
+  .sidebar {
+    @apply relative bg-pixlviol-500 dark:bg-pixlviol-800 h-screen w-[350px] hidden p-7 sm:block shadow-xl z-50
+  }
+  .sidebarLink {
+    @apply flex items-center px-1 py-5 text-xl font-medium cursor-pointer text-white hover:text-white dark:text-gray-200 focus:text-pixlviol-500 focus:bg-pixlviol-100 focus:outline-none dark:focus:bg-gray-800
+  }
+  .navLink {
+    @apply block px-4 text-2xl text-white/80 no-underline rounded-md dark:text-gray-200 hover:blur-0 hover:text-white hover:cursor-pointer focus:text-white focus:outline-none dark:focus:bg-gray-800
+  }
+  .navLink a {
+    @apply w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-pixlviol-500 focus:text-pixlviol-500 focus:bg-pixlviol-100 focus:outline-none dark:focus:bg-gray-700 text-base
+  }
+  .navLinkDT a {
+    @apply w-full px-4 py-2 text-black rounded-md dark:text-gray-300 hover:text-pixlviol-500 focus:text-pixlviol-500 focus:bg-pixlviol-100 focus:outline-none dark:focus:bg-gray-700 text-lg font-normal
+  }
+  .NavIcon {
+    @apply h-7 w-7 cursor-pointer text-white hover:text-pixlviol-400
+  }
+  .form {
+    @apply bg-white dark:bg-slate-800 rounded-lg shadow-xl pb-4
+  }
+  .formHeading {
+    @apply text-sm uppercase text-slate-200 dark:text-slate-200 items-center border-black/10 border-b font-medium formSpacing mb-3 pb-3
+  }
+  .formLabel {
+    @apply block text-sm text-gray-600 mb-2 dark:text-slate-200
+  }
+  .formInput {
+    @apply w-full px-3 py-2 text-gray-700 bg-gray-200/30 hover:bg-white active:bg-white rounded dark:bg-slate-400 dark:text-black
+  }
+  .formSpacing {
+    @apply p-5 md:px-8 md:py-3
+  }
+
+  /* retailers */
+  .retailerCard {
+    @apply py-3 sm:py-4
+  }
+  .retailerLink {
+    @apply inline-flex items-center text-base font-semibold text-pixlviol-500 dark:text-white border border-pixlviol-400 rounded-lg p-3 hover:bg-pixlviol-400
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
