@@ -13,7 +13,7 @@ export default function Hero() {
       <Container className="flex flex-wrap ">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
-            <h1 className="font-Space text-3xl font-bold leading-snug tracking-tight text-gray-800 lg:text-3xl lg:leading-tight xl:text-4xl xl:leading-tight dark:text-white">Earn FREE NFTs for shopping<br/>at your favorite retailers</h1>
+          <h1 className="font-Space text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-3xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white"><span className='hero_grad_ll'>Earn FREE NFTs for shopping</span> <br/> at your favorite retailers and websites</h1>
             <p className="py-5 text-xl leading-normal text-pixlviol-500 lg:text-lg dark:text-gray-300">
             Earn up to 33% back in NFT Rewards, Solana or USDC!
             </p>

@@ -87,7 +87,7 @@ export default function Navbar() {
             Sign in
           </Link>
           <Link legacyBehavior href="/shop">
-            <a className="buttonPrimary py-2">Shop</a>
+          <a className="buttonPrimary shop-button-ll py-2">Shop</a>
           </Link>
           <ThemeChanger />
         </div>

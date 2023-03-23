@@ -1,4 +1,3 @@
-import { useState, useMemo, useEffect } from "react";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -10,7 +9,7 @@ export default function SignIn() {
       <section id="register" className="bg-pixlviol-100 dark:bg-neutral-900 dark:bg-gradient-to-r dark:to-rgb(22,23,24) dark:from-slate-900 dark:text-white p-5 py-20 md:p-20 md:pt-[150px] min-h-screen">
          <div className="md:max-w-[400px] m-auto">
          {/* FORM DETAILS */}
-         <div className="bg-white rounded-lg p-5">
+         <div className="bg-white dark:bg-pixlviol-400/10 rounded-lg p-5">
             {/* Logo + Copy */}
             <div className="flex-col items-center text-center space-y-5">
                {/* <div className="m-auto mb-10">
@@ -30,7 +29,11 @@ export default function SignIn() {
 
 
                <div className="flex">
-                  <span className="inline-flex items-center px-4 py-3.5 text-sm text-gray-900 bg-black/5 border-gray-300 rounded-l-md dark:bg-black/100 dark:text-black/80 dark:border-gray-600">§</span>
+                  <span className="inline-flex items-center px-4 py-3.5 text-sm text-gray-900 dark:bg-gradient-to-r dark:to-rgb(22,23,24) dark:from-slate-900 border-gray-300 rounded-l-md dark:bg-black/100 dark:text-black/80 dark:border-gray-600">
+                     <img src='/favicon.ico'
+                     alt='pixl'
+                     />
+                  </span>
                   <input className="w-full h-[52px] bg-pixlviol-800/0 border rounded-sm px-5 py-3.5 text-pixlviol-500 placeholder:text-lightWhite focus-visible:outline-0" placeholder="Username" type="text" 
                   // {...register("name", { required: "Name is required" })} 
                   />
@@ -56,9 +59,9 @@ export default function SignIn() {
                   Join
                </Link>
                <p className="mt-5 text-center">
-                  Alrady have an account?{" "}
+                  Already have an account?{" "}
                   <Link className="" href="/account/login">
-                  <span className="text-pixlviol-100 font-bold cursor-pointer">Sign In.</span>
+                  <span className="text-black dark:text-white font-bold cursor-pointer">Sign In.</span>
                   </Link>
                </p>
 

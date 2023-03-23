@@ -41,6 +41,59 @@ export default function IndexPage() {
       <Navbar />
       <Hero />
 
+      <div className='how_it_works_container_ll'>
+      <h2>
+            Pixl.  &nbsp; How it works
+        </h2>
+        <div className='how_it_works_inner_ll'>
+          
+          <div className='how_it_works_section_1'>
+          <div className='box_container_ll'>
+            <div className='box_inner_ll'>
+              <h3>Pixl. partners</h3>
+              <p>Pixl partners with retailers that want us to direct their web3 users to their online stores</p>
+              <li>
+                Web3 users are online retailers&rsquo;   ideal demographic: high-spending internet power users
+              </li>
+            </div>
+          </div>
+          
+          <div className='box_container_ll'>
+            <div className='box_inner_ll'>
+              <h3>Share</h3>
+              <p>Pixl takes a nominal fee and distributes the remaining commission to the users in form of web3 rewards</p>
+            </div>
+          </div>
+          </div>
+
+          <img
+          className='hiw_image_ll'
+          src='/howitWorks.png'
+          alt='bg'
+          />
+
+          <div className='how_it_works_section_2'>
+          <div className='box_container_ll'>
+            <div className='box_inner_ll'>
+              <h3>Redeem</h3>
+              <p>Users redeem web3 rewards for their favourite NFTS, Solana or USDC</p>
+            </div>
+          </div>
+          
+          <div className='box_container_ll'>
+            <div className='box_inner_ll'>
+              <h3>Commission</h3>
+              <p>Affliate retailers pay Pixl a comission for sales generated from our users</p>
+            </div>
+          </div>
+
+
+          </div>
+
+          
+        </div>
+      </div>
+
       <section id="benefits" className="">
         <SectionTitle
           pretitle="pixl. Benefits"
