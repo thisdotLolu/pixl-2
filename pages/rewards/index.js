@@ -8,7 +8,7 @@ import NavbarMobile from "../../components/navbarMobile";
 import PopupWidget from "../../components/popupWidget";
 import RewardCard from '../../components/rewardCard';
 import UserNav from "../../components/userNav";
-import AuthWrapper from "../../utils/AuthWrapper"
+
 import Rtransactions from "./transactions";
 
 function classNames(...classes) {
@@ -18,7 +18,7 @@ function classNames(...classes) {
 export default function Rewards() {
 
    return (
-      <AuthWrapper>
+         <>
          <div className="block md:hidden">
             <Navbar/>
          </div>
@@ -65,6 +65,6 @@ export default function Rewards() {
             <PopupWidget /> 
          </div>
          <NavbarMobile/>
-      </AuthWrapper>
+         </>
    );
 }

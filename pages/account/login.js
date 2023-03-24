@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import AuthOptions from "../../components/authOptions";
+
 import PopupWidget from "../../components/popupWidget";
 
 
@@ -64,9 +64,7 @@ export default function Register() {
 
 
       </div>
-         
-      <AuthOptions />
-
+      
       <PopupWidget />
       </div>
    </section>

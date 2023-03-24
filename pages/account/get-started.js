@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import AuthOptions from "../../components/authOptions";
+
 import PopupWidget from "../../components/popupWidget";
 
 export default function SignIn() {
@@ -75,7 +75,7 @@ export default function SignIn() {
             or continue with
             </span>
 
-            <AuthOptions/>
+            {/* <AuthOptions/> */}
 
          </div>
 

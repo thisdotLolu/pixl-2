@@ -1,5 +1,4 @@
 import { ArrowRightOnRectangleIcon, ShoppingBagIcon, TrophyIcon, UserCircleIcon } from '@heroicons/react/24/outline';
-import { getAuth } from 'firebase/auth';
 import Lottie from 'lottie-react'
 import Link from 'next/link';
 import React from 'react'
@@ -9,7 +8,7 @@ import logow from '../public/anim/pixl-logo-white.json'
 import ThemeChanger from './DarkSwitch';
 
 export default function UserNav() {
-   const auth = getAuth();
+  
    return (
       <>
          <div className="flex justify-between items-center">

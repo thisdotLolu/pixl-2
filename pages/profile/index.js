@@ -2,7 +2,7 @@ import Navbar from "../../components/navbar";
 import NavbarMobile from "../../components/navbarMobile";
 import PopupWidget from "../../components/popupWidget";
 import UserNav from "../../components/userNav";
-import AuthWrapper from "../../utils/AuthWrapper"
+
 
 //import dynamic from "next/dynamic";
 
@@ -19,8 +19,8 @@ import AuthWrapper from "../../utils/AuthWrapper"
 
 export default function Profile() {
    return (
-      <AuthWrapper>
-         <div className="block md:hidden">
+      <>
+      <div className="block md:hidden">
             <Navbar/>
          </div>
          <div className="Pcontainer">
@@ -101,7 +101,7 @@ export default function Profile() {
             <PopupWidget /> 
          </div>
          <NavbarMobile/>
-
-      </AuthWrapper>
+      </>
+         
    );
 }
