@@ -1,7 +1,5 @@
 import Image from "next/image"
 
-import { urlFor } from "../sanity"
-
 const SImage = ({ identifier, image }) => {
    return (
       <div className={identifier === "main-image" ? "main-image" : "image"}>

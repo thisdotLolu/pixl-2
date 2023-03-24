@@ -1,5 +1,4 @@
-// typings.d.ts 
-import { NumberRule } from "sanity";
+// typings.d.ts
 
 export interface BlogPost {
   _id: string;
