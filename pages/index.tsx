@@ -66,12 +66,15 @@ export default function IndexPage() {
           </div>
           </div>
 
+          <div className='how_it_works_middle_section'>
           <img
           className='hiw_image_ll'
           src='/howitWorks.png'
           alt='bg'
           />
-
+         
+          </div>
+          
           <div className='how_it_works_section_2'>
           <div className='box_container_ll'>
             <div className='box_inner_ll'>
@@ -95,22 +98,13 @@ export default function IndexPage() {
       </div>
 
       <section id="benefits" className="">
-        <SectionTitle
-          pretitle="pixl. Benefits"
-          title="Benefits for all!">
-          Pixl. unlocks competitive web3 rewards for users shopping at their favorite retailers across the web.
-        </SectionTitle>
+        
         <Benefits data={benefitOne} />
         <EveryoneWins />
         <Benefits imgPos="right" data={benefitTwo} />
-        <SectionTitle
-          pretitle="How it works"
-          title="Earning is easy!">
-          Get pixl. for free and add pixl. to your favorite browser in seconds. Shop your favorite retails and earn points redeemable for rewards.
-        </SectionTitle>
       </section>
       
-      <Video />
+      {/* <Video /> */}
       {/* <SectionTitle
         pretitle="Testimonials"
         title="We're loved">

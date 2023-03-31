@@ -13,11 +13,12 @@ export default function Benefits(props) {
           className={`flex items-center justify-center w-full lg:w-1/2 ${
             props.imgPos === "right" ? "lg:order-1" : ""
           }`}>
-          <div>
+          <div
+          style={{objectFit:'cover',height:'100%',width:'100%'}}
+          >
             <Image
+            className="image_benefitsTwo"
               src={data.image}
-              width="521"
-              height="521"
               alt="Benefits"
               layout="intrinsic"
             />
