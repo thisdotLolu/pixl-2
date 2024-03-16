@@ -105,6 +105,7 @@
 }
 
 
+
 .how_it_works_container_ll h2{
   font-family: 'Clash Display';
   color:#c728ff;
@@ -130,19 +131,14 @@
 }
 
 
-
 .box_container_ll{
-  max-width: 250px;
-  height: 400px;
-  /* padding: 1rem; */
   position: relative;
   background: linear-gradient(to right, #9c615c, #f2b11c, #820da2);
   padding: 1px;
   margin: 10px;
   border-radius: 1em;
   box-shadow: 5px 10px #0a010c;
-  margin-bottom: 20px;
-  /* align-self:flex-end; */
+
 }
 
 .box_inner_ll{
@@ -150,7 +146,6 @@
   color: white;
   padding:14px;
   border-radius: 1em;
-  height: 100%;
 }
 
 .box_inner_ll h3{
