@@ -10,7 +10,7 @@ import Container from "./container";
 export default function Hero() {
   return (
     <>
-      <Container className="flex flex-wrap ">
+      <Container className="flex flex-wrap">
         <div className="flex items-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
           <h1 className="text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:text-3xl lg:leading-tight xl:text-5xl xl:leading-tight dark:text-white hero_grad_ll"> Earn FREE NFTs for shopping <br/> at your favorite retailers and websites</h1>
@@ -19,7 +19,7 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
-              <Link href="/account/get-started" rel="noopener" className="buttonPrimary py-4">Start Earning in less than 30 seconds</Link>
+              <Link href="/account/get-started" rel="noopener" className="buttonPrimary py-4">Start Earning</Link>
               <Link href="/account/get-started" rel="noopener" className="hidden items-center px-6 py-4 text-lg font-medium text-center text-black border border-pixlviol-600 rounded-md hover:bg-pixlviol-600 hover:text-white">
                 <div className="w-6 h-6 mr-3">
                   <Image src="/img/solana-logo.svg" width="100" height="100" alt="Solana" className="mr-2" /> 

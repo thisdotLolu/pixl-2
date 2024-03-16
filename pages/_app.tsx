@@ -1,34 +1,25 @@
 import 'styles/global.css'
 
-import React, { FC, useMemo } from "react";
-import { AppProps } from 'next/app';
-import { ThemeProvider } from "next-themes";
-import { SessionProvider } from "next-auth/react";
+import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import {
   ConnectionProvider,
   WalletProvider,
 } from "@solana/wallet-adapter-react";
-import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import {
-  CoinbaseWalletAdapter,
-  GlowWalletAdapter,
-  PhantomWalletAdapter,
-  SlopeWalletAdapter,
-  SolflareWalletAdapter,
-  // SolletExtensionWalletAdapter,
-  // SolletWalletAdapter,
-  TorusWalletAdapter,
-} from "@solana/wallet-adapter-wallets";
-import {
-  WalletModalProvider,
   WalletDisconnectButton,
+  WalletModalProvider,
   WalletMultiButton,
 } from "@solana/wallet-adapter-react-ui";
+import { UnsafeBurnerWalletAdapter } from '@solana/wallet-adapter-wallets';
 import { clusterApiUrl } from "@solana/web3.js";
 import {
   createDefaultAuthorizationResultCache,
   SolanaMobileWalletAdapter,
 } from "@solana-mobile/wallet-adapter-mobile";
+import { AppProps } from 'next/app';
+import { SessionProvider } from "next-auth/react";
+import { ThemeProvider } from "next-themes";
+import React, { FC, useMemo } from "react";
 
 // Default styles that can be overridden by your app
 require("@solana/wallet-adapter-react-ui/styles.css");
@@ -44,19 +35,23 @@ function MyApp({ Component, pageProps }: AppProps) {
   // of wallets that your users connect to will be loaded.
   const wallets = useMemo(
     () => [
-      // new SolanaMobileWalletAdapter({
-      //   appIdentity:{ name: "Solana Wallet Adapter App" },
-      //   authorizationResultCache: createDefaultAuthorizationResultCache(),
-      // }),
-      new CoinbaseWalletAdapter(),
-      new PhantomWalletAdapter(),
-      new GlowWalletAdapter(),
-      new SlopeWalletAdapter(),
-      new SolflareWalletAdapter({ network }),
-      new TorusWalletAdapter(),
+        /**
+         * Wallets that implement either of these standards will be available automatically.
+         *
+         *   - Solana Mobile Stack Mobile Wallet Adapter Protocol
+         *     (https://github.com/solana-mobile/mobile-wallet-adapter)
+         *   - Solana Wallet Standard
+         *     (https://github.com/anza-xyz/wallet-standard)
+         *
+         * If you wish to support a wallet that supports neither of those standards,
+         * instantiate its legacy wallet adapter here. Common legacy adapters can be found
+         * in the npm package `@solana/wallet-adapter-wallets`.
+         */
+        new UnsafeBurnerWalletAdapter(),
     ],
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [network]
-  );
+);
   return (
     <>
       <ConnectionProvider endpoint={endpoint}>
