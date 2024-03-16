@@ -66,14 +66,6 @@ export default function IndexPage() {
           </div>
           </div>
 
-          <div className='how_it_works_middle_section'>
-          <img
-          className='hiw_image_ll'
-          src='/howitWorks.png'
-          alt='bg'
-          />
-         
-          </div>
           
           <div className='how_it_works_section_2'>
           <div className='box_container_ll'>
