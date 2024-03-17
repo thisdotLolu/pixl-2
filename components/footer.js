@@ -64,14 +64,7 @@ export default function Footer() {
         </div>
 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
-          Copyright © {new Date().getFullYear()} Pixl Team LLC. emPowered by {""}
-          <Link
-            href="https://manifestfts.com/"
-            target="_blank"
-            rel="noreferrer">
-            Manifest FTS.
-          </Link>{" "}
-        
+          Copyright © {new Date().getFullYear()} Pixl Team LLC.
         </div>
       </Container>
       {/* Do not remove this */}
