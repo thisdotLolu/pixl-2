@@ -67,8 +67,8 @@ export default function Footer() {
           Copyright © {new Date().getFullYear()} Pixl Team LLC.
         </div>
       </Container>
-      {/* Do not remove this */}
-      <Backlink />
+      {/* Do not remove this
+      <Backlink /> */}
     </div>
   );
 }
